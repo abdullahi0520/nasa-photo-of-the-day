@@ -5,8 +5,11 @@ import Body from './Body'
 
 
 
+
+
 function App() {
   const [nasaStuff, setNasaStuff] = useState('');
+
 
  
   useEffect (() => {
@@ -22,9 +25,9 @@ function App() {
 },[])
   return (
     <div className="App">
-      <p>
+      <h1>
         Nasa Photo of the Day <span role="img" aria-label='go!'>🚀</span>!
-      </p>
+      </h1>
       {nasaStuff && <Body data = {nasaStuff} />}
 
 
